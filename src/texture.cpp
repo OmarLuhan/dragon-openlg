@@ -2,7 +2,7 @@
 #include "stdafx.h"
 #include <cstring>  // Para memcmp
 
-#include "Texture.h"
+#include "texture.h"
 
 TGAHeader tgaheader;									// TGA header
 TGA tga;												// TGA image data

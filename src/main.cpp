@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "glm.h"
-#include "Texture.h"
+#include "texture.h"
 #include <iostream>
 #include <ctime>
 #include <cmath>
@@ -69,9 +69,9 @@ Texture	treeTextureAr[3];
 bool LoadTreeTextures()
 {
 	int i;
-	if (LoadTGA(&treeTextureAr[0],"modelos/body.tga")
-     &&LoadTGA(&treeTextureAr[1],"modelos/fullsize3.tga")
-     &&LoadTGA(&treeTextureAr[2],"modelos/textura.tga"))
+	if (LoadTGA(&treeTextureAr[0],"assets/textures/body.tga")
+     &&LoadTGA(&treeTextureAr[1],"assets/textures/fullsize3.tga")
+     &&LoadTGA(&treeTextureAr[2],"assets/textures/textura.tga"))
 	{
 		for (i = 0; i<3; i++){
 
@@ -930,26 +930,26 @@ int main(int argc, char** argv)
     todo = 1; a=b=c=d=e=f=g=h=j=k=l=m=n=o=p=q=r=s=t=u=1;
 
 	///modelos OBJ
-    punteroM1 = glmReadOBJ("modelos/Tronco.obj");
-    punteroM2 = glmReadOBJ("modelos/Cuello.obj");
-    punteroM3 = glmReadOBJ("modelos/Cabeza.obj");
-    punteroM4 = glmReadOBJ("modelos/BrazoIzquierdo.obj");
-    punteroM5 = glmReadOBJ("modelos/AntebrazoIzquierdo.obj");
-    punteroM6 = glmReadOBJ("modelos/ManoIzquierda.obj");
-    punteroM7 = glmReadOBJ("modelos/BrazoDerecho.obj");
-    punteroM8 = glmReadOBJ("modelos/AntebrazoDerecho.obj");
-    punteroM9 = glmReadOBJ("modelos/ManoDerecha.obj");
-    punteroM10 = glmReadOBJ("modelos/MusloIzquierdo.obj");
-    punteroM11 = glmReadOBJ("modelos/PiernaIzquierda.obj");
-    punteroM12 = glmReadOBJ("modelos/PieIzquierdo.obj");
-    punteroM13 = glmReadOBJ("modelos/MusloDerecho.obj");
-    punteroM14 = glmReadOBJ("modelos/PiernaDerecha.obj");
-    punteroM15 = glmReadOBJ("modelos/PieDerecho.obj");
-    punteroM16 = glmReadOBJ("modelos/AlaIzquierda.obj");
-    punteroM17 = glmReadOBJ("modelos/AlaDerecha.obj");
-    punteroM18 = glmReadOBJ("modelos/Cola.obj");
-    punteroM19 = glmReadOBJ("modelos/Escenario.obj");
-    punteroM20 = glmReadOBJ("modelos/cielo.obj");
+    punteroM1 = glmReadOBJ("assets/models3d/Tronco.obj");
+    punteroM2 = glmReadOBJ("assets/models3d/Cuello.obj");
+    punteroM3 = glmReadOBJ("assets/models3d/Cabeza.obj");
+    punteroM4 = glmReadOBJ("assets/models3d/BrazoIzquierdo.obj");
+    punteroM5 = glmReadOBJ("assets/models3d/AntebrazoIzquierdo.obj");
+    punteroM6 = glmReadOBJ("assets/models3d/ManoIzquierda.obj");
+    punteroM7 = glmReadOBJ("assets/models3d/BrazoDerecho.obj");
+    punteroM8 = glmReadOBJ("assets/models3d/AntebrazoDerecho.obj");
+    punteroM9 = glmReadOBJ("assets/models3d/ManoDerecha.obj");
+    punteroM10 = glmReadOBJ("assets/models3d/MusloIzquierdo.obj");
+    punteroM11 = glmReadOBJ("assets/models3d/PiernaIzquierda.obj");
+    punteroM12 = glmReadOBJ("assets/models3d/PieIzquierdo.obj");
+    punteroM13 = glmReadOBJ("assets/models3d/MusloDerecho.obj");
+    punteroM14 = glmReadOBJ("assets/models3d/PiernaDerecha.obj");
+    punteroM15 = glmReadOBJ("assets/models3d/PieDerecho.obj");
+    punteroM16 = glmReadOBJ("assets/models3d/AlaIzquierda.obj");
+    punteroM17 = glmReadOBJ("assets/models3d/AlaDerecha.obj");
+    punteroM18 = glmReadOBJ("assets/models3d/Cola.obj");
+    punteroM19 = glmReadOBJ("assets/models3d/Escenario.obj");
+    punteroM20 = glmReadOBJ("assets/models3d/cielo.obj");
 
 	glutDisplayFunc(graficar);
     glutReshapeFunc(reshape);

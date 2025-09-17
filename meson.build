@@ -1,4 +1,4 @@
-project('dragon-opngl', 'cpp',
+project('dragon-opengl', 'cpp',
   version : '1.0',
   default_options : ['cpp_std=c++11', 'warning_level=3'])
 
@@ -9,14 +9,14 @@ glut_dep = dependency('glut')
 
 # Especificar archivos fuente
 sources = [
-  'main.cpp',
-  'Texture.cpp',
-  'glm.cpp',
-  'stdafx.cpp'
+  'src/main.cpp',
+  'src/texture.cpp',
+  'src/glm.cpp',
+  'src/stdafx.cpp'
 ]
 
 # Especificar directorios de include
-inc = include_directories('dependencias/include')
+inc = include_directories('dependencies/include')
 
 # Crear el ejecutable
 executable('dragon-opngl',
