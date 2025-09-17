@@ -1,12 +1,10 @@
 ///LIBRERIAS
 #include <stdlib.h>
-#include <stdio.h>
 #include "glm.h"
 #include "texture.h"
 #include <iostream>
 #include <ctime>
 #include <cmath>
-#include <cstdlib>
 #include <fstream>
 
 #ifdef _APPLE_

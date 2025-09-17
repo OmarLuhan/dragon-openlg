@@ -1,17 +1,10 @@
 //#ifndef __TGA_HEADER__
 //#define __TGA_HEADER__
 
-//#include "MainHeader.h"
-//#include "TextureHeader.h"
-
-// Removidas dependencias de Windows para compatibilidad con Linux
+// Core dependencies
 #include <stdlib.h>
 #include <stdio.h>
-//#include <GL/glew.h>
-
 #include "GL/glut.h"
-//#include "gl.h"
-
 #include <math.h>
 
 typedef	struct									
