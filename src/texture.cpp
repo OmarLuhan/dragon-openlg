@@ -1,5 +1,4 @@
 //http://nehe.gamedev.net/data/lessons/lesson.asp?lesson=33
-#include "stdafx.h"
 #include <cstring>  // Para memcmp
 
 #include "texture.h"
