@@ -12,7 +12,6 @@ sources = [
   'src/main.cpp',
   'src/texture.cpp',
   'src/glm.cpp',
-  'src/stdafx.cpp'
 ]
 
 # Especificar directorios de include
